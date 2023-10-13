@@ -1,0 +1,3 @@
+bffczlmhntkplvbn
+
+mysqlrootpass= ippt
