@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist&display=swap');
+body{
+  font-family: 'Urbanist', sans-serif;
+  font-weight: bold;
+  background-color: #105e4e;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+html{
+  height: 100%;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+.main-nav{
+  position: fixed;
+  float: left;
+  left: 0;
+  background-color: #105e4e;
+  background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  width: 300px;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: center;
+  align-content: center;
+  box-shadow: -10px 0px 15px 0px rgba(0, 0, 0, 0.4);
+  font-size:medium;
+}
+
+.main-nav-ul{
+  width: 100%;
+}
+
+/* Apply white background to the selected page */
+.home .main-nav-ul li a.active,
+.qrgenerator .main-nav-ul li a.active,
+.personnelmanagement .main-nav-ul li a.active,
+.servicerequeststatus .main-nav-ul li a.active,
+.attendancereport .main-nav-ul li a.active,
+.servicerequestreport .main-nav-ul li a.active,
+.aboutsystem .main-nav-ul li a.active,
+.aboutdeveloper .main-nav-ul li a.active {
+    background-color: white;
+    border-radius: 30px;
+    color: black; /* Adjust text color as needed */
+}
+
+/* Add margin between the icon and text */
+.li a i {
+  margin-right: 10px; /* Adjust as needed */
+}
+.main-nav-ul a{
+  text-transform: uppercase;
+  text-decoration: none;
+  color:#fff;
+  display: block;
+  padding: 20px 0px 10px 20px;
+  padding: 20px;
+  margin-left: 20px;
+}
+.main-nav-ul a:hover{
+  border-radius: 30px;
+  background-color: #fff;
+  color: black;
+  margin-top:0;
+}
+.main-nav-ul i:hover{
+  background-color: green;
+}
+.main-nav-ul ul {
+  display: none;
+  margin-top: 0;
+}
+
+img{
+  position: relative;
+  object-fit: contain;
+  height: 150px;
+  top:-20px;
+  margin: 50px 50px 0px 70px;
+}
+
+.container{
+  position: absolute;
+  height: 615px;
+  width: 1020px;
+  background-color: #fff;
+  margin: 20px 20px 10px 20px;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding-left: 30px;
+  padding-right: 30px;
+  right: 0%;
+}
+.table-container{
+  top: 50px;
+  position: absolute;
+  max-height: 350px;
+  overflow-y: auto;
+  width: 90%;
+  margin-top: 30px;
+  padding-left: 10px;
+}
+.table-container p a{
+  color: black;
+}
+
+p{
+  font-size: 17px;
+  margin-top: 1em;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid black;
+}
+a{
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+a span{
+  position:relative;
+  display: inline-block;
+  padding-right: 15px;
+  height: 20px;
+  width: 5px;
+
+}
+ .user-info {
+  position: absolute;
+  top: -20px;
+  right: 5px; 
+}
+
+.user-icon {
+  top: -10px;
+  width: 40px; 
+  height: 40px; 
+  background-image: url('img/account.png');
+  background-size: cover;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.username {
+  position: absolute;
+  top: 50px;
+  left: 150px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px; 
+}
+
+.arrow-down {
+  position: absolute;
+  bottom: 4px;
+  right: 40px; 
+  transform: rotate(45deg);
+  width: 6px;
+  height: 6px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  background: transparent;
+}
+
+    .user-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 90px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+
+  .submenu {
+    display: none;
+  }
+  .submenu.show-submenu {
+  display: block;
+  padding-left: 40px;
+}
+
+h2{
+  margin-bottom: 150px;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.txtfield{
+  margin-bottom: 20px;
+}
+input[type="password"]{
+  height: 60px;
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding-left: 5px;
+  font-size: large;
+  background-color: rgb(198, 255, 202);
+}
+input[type="submit"]{
+  position: absolute;
+  bottom: 30%;
+  font-size: 18px;
+  color: #fff;
+  background: #105e4e;
+  border-radius: 5px;
+  border: none;
+  width: 150px;
+  height: 40px;
+}
+input[type="submit"]:hover{
+  cursor: pointer;
+}

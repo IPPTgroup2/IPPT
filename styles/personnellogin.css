@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist&display=swap');
+*{
+    background-color: #eed2cc;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: bold;
+}
+.bckgrnd{
+    overflow: hidden;
+    height: 98%;
+    width: 850px;
+    float: right;
+    position:absolute;
+    right: 0px;
+    z-index: -1;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    clip-path:polygon(25% 0%,100% 0%,100% 100%,25% 100%,10% 50%);}
+
+.container{
+   position: fixed;
+   top: 50%;
+   left: 20%;
+   transform: translate(-50%, -50%);
+   height: 500px;
+   width: 250px;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   display: flex;
+   flex-wrap:wrap;
+}
+h3{
+    text-align: center;
+    color: white;
+}
+
+.container .image{
+    position: relative;
+    height: 150px;
+    width: 200px;
+    margin: top 0px;
+    padding-top: .5px;
+    object-fit: contain;
+    object-position: center;
+    align-items: center;
+    
+}
+form{
+    width: 80%;
+    font-size: 15px;
+}
+.txtfield input{
+    display: flex;
+    flex-direction: column;
+    height: 35px;
+    width: 100%;
+    background-color: #fcfcfc;
+    border: 1px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+
+}
+
+
+input[type="submit"]{
+    width: 214px;
+    height: 40px;
+    margin: 10 0 10 0;
+    background-image: linear-gradient(to top, #fddf01 0%,#da9101 100%);
+    border-radius: 5px;
+    border: black 1px solid;
+    font-size: 20px;
+    padding: 5px;
+}
+input[type="submit"]:hover{
+    cursor:pointer;
+}
+
+.forgotpass{
+    margin: 30px 0;
+    text-align: center;
+    font-size:  16px;
+}
+.forgotpass a{
+    color: white;
+    text-decoration: none;
+}
+.forgotpass a:hover{
+    text-decoration: underline;
+}
+.account{
+    margin: 0;
+    text-align: center;
+    align-items: center;
+}
+.account a{
+    text-decoration: none;
+    color: white;
+}
+.account a:hover{
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 321px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        display: flex;
+    }
+    .bckgrnd{
+        display: none;
+    }
+    .container{
+        transform: translate(-10%, -50%);
+    }
+    
+}

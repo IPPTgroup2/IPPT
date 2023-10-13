@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist&display=swap');
+body{
+  font-family: 'Urbanist', sans-serif;
+  font-weight: bold;
+  background-color: #105e4e;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+html{
+  height: 100%;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+.main-nav{
+  position: fixed;
+  float: left;
+  left: 0;
+  background-color: #105e4e;
+  background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  width: 300px;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: center;
+  align-content: center;
+  box-shadow: -10px 0px 15px 0px rgba(0, 0, 0, 0.4);
+  font-size:medium;
+}
+
+.main-nav-ul{
+  width: 100%;
+}
+
+/* Apply white background to the selected page */
+.home .main-nav-ul li a.active,
+.qrgenerator .main-nav-ul li a.active,
+.personnelmanagement .main-nav-ul li a.active,
+.servicerequeststatus .main-nav-ul li a.active,
+.attendancereport .main-nav-ul li a.active,
+.servicerequestreport .main-nav-ul li a.active,
+.aboutsystem .main-nav-ul li a.active,
+.aboutdeveloper .main-nav-ul li a.active {
+    background-color: white;
+    border-radius: 30px;
+    color: black; /* Adjust text color as needed */
+}
+
+/* Add margin between the icon and text */
+.li a i {
+  margin-right: 10px; /* Adjust as needed */
+}
+.main-nav-ul a{
+  text-transform: uppercase;
+  text-decoration: none;
+  color:#fff;
+  display: block;
+  padding: 20px 0px 10px 20px;
+  padding: 20px;
+  margin-left: 20px;
+}
+.main-nav-ul a:hover{
+  border-radius: 30px;
+  background-color: #fff;
+  color: black;
+  margin-top:0;
+}
+.main-nav-ul i:hover{
+  background-color: green;
+}
+.main-nav-ul ul {
+  display: none;
+  margin-top: 0;
+}
+
+img{
+  position: relative;
+  object-fit: contain;
+  height: 150px;
+  top:-20px;
+  margin: 50px 50px 0px 70px;
+}
+
+.container{
+  position: absolute;
+  height: 615px;
+  width: 1020px;
+  background-color: #fff;
+  margin: 20px 20px 10px 20px;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding-left: 30px;
+  padding-right: 30px;
+  right: 0%;
+}
+
+.table-container{
+  top: 50px;
+  position: absolute;
+  max-height: 600px;
+  width: 90%;
+  margin-top: 30px;
+  padding-left: 10px;
+}
+.table-container p a{
+  color: black;
+}
+
+p{
+  font-size: 17px;
+  margin-top: 1em;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid black;
+}
+a{
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+a span{
+  position:relative;
+  display: inline-block;
+  padding-right: 15px;
+  height: 20px;
+  width: 5px;
+
+}
+ .user-info {
+  position: absolute;
+  top: -10px;
+  right: 5px; 
+}
+
+.user-icon {
+  top: -10px;
+  width: 40px; 
+  height: 40px; 
+  background-image: url('img/account.png');
+  background-size: cover;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.username {
+  position: absolute;
+  top: 50px;
+  left: -155px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px; 
+  font-weight: bold;
+}
+
+.arrow-down {
+  position: absolute;
+  bottom: 4px;
+  right: 40px; 
+  transform: rotate(45deg);
+  width: 6px;
+  height: 6px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  background: transparent;
+}
+
+    .user-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 90px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+    width: auto;
+  }
+
+  .submenu {
+    display: none;
+  }
+  .submenu.show-submenu {
+  display: block;
+  padding-left: 40px;
+}
+
+
+.table-container .info{
+  top: 50px;
+  left: 90px;
+  width: 90%;
+  margin-top: 30px;
+  font-size: 20px; 
+}
+
+.table-container{
+  position: absolute;
+  top: 70px;
+  left: 90px;
+  width: 90%;
+  margin-top: 30px;
+}
+.table-container p a{
+  color: black;
+}
+
+/* Style for the table */
+.personnel-table {
+  position: absolute;
+  top: 30px;
+  width: 90%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.personnel-table th,
+.personnel-table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.personnel-table th {
+  background-color: #2f6c48bc;
+  font-weight: bold;
+}
+
+.edit-remove-buttons i {
+  margin-top: 80px;
+  text-decoration: none;
+  padding: 5px;
+  background-color: #fafbfa;
+  border: none;
+  border-radius: 3px;
+}
+.edit-remove-buttons i:hover {
+  color: #010402;
+}
+
+.edit{
+  position:absolute;
+  top: 0px;
+  right: 120px;
+  display: inline-block;
+  margin: 5px;
+  padding: 2px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.remove{
+  position:absolute;
+  top: 0px;
+  right: 90px;
+  display: inline-block;
+  margin: 5px;
+  padding: 2px;
+  border-radius: 4px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+.edit i{
+  background-color: #2f6c48bc;
+  font-size: 20px;
+}
+.remove i{
+  background-color: #2f6c48bc;
+  font-size: 20px;
+}
+/* Hover effect for the buttons */
+.edit i:hover{
+  background-color: #508650;
+}
+.remove i:hover{
+  background-color: #508650;
+}

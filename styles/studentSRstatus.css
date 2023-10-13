@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist&display=swap');
+body{
+  font-family: 'Urbanist', sans-serif;
+  font-weight: bold;
+  background-color: #105e4e;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+html{
+  height: 100%;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+.main-nav{
+  position: fixed;
+  float: left;
+  left: 0;
+  background-color: #105e4e;
+  background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  width: 300px;
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: center;
+  align-content: center;
+  box-shadow: -10px 0px 15px 0px rgba(0, 0, 0, 0.4);
+  font-size:medium;
+}
+
+.main-nav-ul{
+  width: 100%;
+}
+
+/* Apply white background to the selected page */
+.home .main-nav-ul li a.active,
+.servicerequeststatus .main-nav-ul li a.active,
+.servicerequesthistory .main-nav-ul li a.active,
+.request .main-nav-ul li a.active,
+.logout .main-nav-ul li a.active,
+.aboutsystem .main-nav-ul li a.active,
+.aboutdeveloper .main-nav-ul li a.active {
+    background-color: white;
+    border-radius: 30px 0px 0px 30px;
+    color: black; /* Adjust text color as needed */
+}
+
+/* Add margin between the icon and text */
+.li a i {
+  margin-right: 10px; /* Adjust as needed */
+}
+.main-nav-ul a{
+  text-transform: uppercase;
+  text-decoration: none;
+  color:#fff;
+  display: block;
+  padding: 20px 0px 10px 20px;
+  padding: 20px;
+  margin-left: 20px;
+}
+.main-nav-ul a:hover{
+  border-radius: 30px;
+  background-color: #fff;
+  color: black;
+  margin-top:0;
+}
+
+.main-nav-ul ul {
+  display: none;
+  margin-top: 0;
+}
+
+img{
+  position: relative;
+  object-fit: contain;
+  height: 150px;
+  top:-20px;
+  margin: 50px 50px 0px 70px;
+}
+
+.container{
+  position: absolute;
+  height: 615px;
+  width: 1020px;
+  background-color: #fff;
+  margin: 20px 20px 10px 20px;
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding-left: 30px;
+  padding-right: 30px;
+  right: 0%;
+}
+
+.table-container{
+  top: 100px;
+  position: absolute;
+  overflow-y: scroll;
+  height: 490px;
+  right:5%;
+  width: 90%;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.table-container p a{
+  color: black;
+}
+
+ .user-info {
+  position: absolute;
+  top: -20px;
+  right: 5px; 
+}
+
+.user-icon {
+  top: -10px;
+  width: 40px; 
+  height: 40px; 
+  background-image: url('img/account.png');
+  background-size: cover;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.username {
+  position: absolute;
+  top: 50px;
+  left: -155px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px; 
+  font-weight: bold;
+}
+
+.arrow-down {
+  position: absolute;
+  bottom: 4px;
+  right: 40px; 
+  transform: rotate(45deg);
+  width: 6px;
+  height: 6px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  background: transparent;
+}
+
+    .user-dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 90px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+    width: auto;
+  }
+
+  .submenu {
+    display: none;
+  }
+  .submenu.show-submenu {
+  display: block;
+  padding-left: 40px;
+}
+
+.search-bar input[type="text"] {
+  position: absolute;
+  top: 50px;
+  width: 350px;
+  height: 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  background-color: #bbefde; 
+}
+
+.search-bar button {
+  position: absolute;
+  left: 350px;
+  top: 50px;
+  width: 30px;
+  height: 30px;
+  background-color: #6c8a81; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+.search-bar button:hover {
+  background-color: #56726a;
+}
+
+.status{
+  padding-top: 10px;
+}
+.list-of-status{
+  max-height: 430px;
+  overflow-y: auto;
+  position: absolute;
+  top: 80px;
+  width: 95%;
+  padding-top: 30px;
+}
+
+p a{
+  color: black;
+}
+p a:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Example table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+p{
+  font-size: 17px;
+  margin-top: 1em;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid black;
+}
+a{
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+a span{
+  position:relative;
+  display: inline-block;
+  padding-right: 15px;
+  height: 20px;
+  width: 5px;
+
+}
+
+h2{
+  position: absolute;
+  top: 70px;
+}
